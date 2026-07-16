@@ -1,0 +1,282 @@
+========================================
+FILE: DOKUMEN INDUK TATA KELOLA INTERACTIVE FLAT PANEL (IFP).docx
+========================================
+DOKUMEN INDUK TATA KELOLA INTERACTIVE FLAT PANEL (IFP)
+SMP INDUK PENYELENGGARA SMP TERBUKA
+A. Identitas Dokumen
+Nama Dokumen: Dokumen Induk Tata Kelola IFP di SMP Induk untuk Mendukung Layanan SMP Terbuka
+Unit/Instansi: SMP ……………………………………… (SMP Induk SMP Terbuka)
+Tanggal Berlaku: ………………………………………
+Revisi/Versi : 1.0
+Disusun oleh : Tim Pengelola IFP
+Diperiksa oleh : Waka Kurikulum / Pengelola SMP Terbuka
+Disahkan oleh : Kepala Sekolah ……………………………
+B. Latar Belakang
+Perangkat Interactive Flat Panel (IFP) merupakan sarana digitalisasi pembelajaran yang mendukung pembelajaran interaktif, kolaboratif, dan terdokumentasi. Pada SMP Induk yang menyelenggarakan SMP Terbuka, penggunaan IFP harus diatur secara adil, aman, dan akuntabel agar:
+Pembelajaran reguler SMP Induk berjalan optimal, dan
+Layanan tutorial/penguatan/remedial SMP Terbuka terlaksana secara konsisten.
+Dokumen induk ini menjadi acuan tata kelola penggunaan IFP yang meliputi kebijakan akses, standar keamanan, sistem pencatatan bukti pemanfaatan, serta penetapan SOP operasional.
+C. Tujuan
+Menetapkan kebijakan umum pemanfaatan IFP untuk pembelajaran SMP Induk dan layanan SMP Terbuka.
+Menjamin ketersediaan, keteraturan jadwal, serta prioritas pemanfaatan IFP.
+Menjamin pengelolaan aset (inventaris, perawatan, pemeliharaan, penyimpanan, pengamanan) secara tertib.
+Menjamin ketersediaan media pembelajaran interaktif melalui repository resmi sekolah.
+Menjamin setiap penggunaan terdokumentasi melalui log dan bukti pemanfaatan untuk monitoring dan evaluasi.
+Menetapkan kerangka pelatihan dan pengimbasan kompetensi digital guru/tendik.
+D. Ruang Lingkup
+Dokumen induk ini berlaku untuk:
+seluruh unit IFP di SMP ………………………………………,
+seluruh pengguna (kepala sekolah, guru, tendik, tutor SMP Terbuka, murid SMP Terbuka, siswa SMP Induk),
+seluruh kegiatan pembelajaran dan layanan yang memanfaatkan IFP,
+pengelolaan bahan ajar digital dan bukti pemanfaatan pada penyimpanan resmi sekolah.
+E. Definisi dan Istilah Kunci
+IFP: Interactive Flat 
+... [TRUNCATED]
+
+========================================
+FILE: QUICK GUIDE IFP.docx
+========================================
+01. QUICK GUIDE IFP – POSTER UMUM (GURU/TUTOR/TENDIK)
+SMP ……………………………………… (SMP Induk SMP Terbuka)Tempel di Ruang IFP / Ruang Penyimpanan
+A. BOLEH PAKAI / TIDAK BOLEH
+✅ Guru/Tutor/Tendik berizin sesuai jadwal✅ Siswa/murid hanya didampingi guru/tutor❌ Jangan gunakan akun admin (kecuali Operator/Tim TIK)
+B. SEBELUM MULAI (CEK 30 DETIK)
+Layar menyala normal
+Sentuh/stylus responsif
+Suara normal
+Kabel rapi & aman
+Materi siap dari Repository Resmi Sekolah (Drive/Hardisk/LMS)
+Jika pakai flashdisk/HDD: pastikan aman dari virus sebelum colok.
+C. SAAT MENGAJAR (AMAN & TERTIB)
+✅ Gunakan untuk: board/anotasi, presentasi, kuis interaktif, diskusi, presentasi siswa✅ Siswa menyentuh IFP bergantian & atas izin guru
+❌ DILARANG:
+instal/hapus aplikasi
+ubah pengaturan sistem
+akses konten terlarang (pornografi/kekerasan/perjudian)
+memindahkan perangkat/mencabut kabel tanpa izin
+D. SETELAH SELESAI (WAJIB 3 LANGKAH)
+SIMPAN HASIL (export board PDF/PNG bila perlu)
+UNGGAH/TAUTKAN BUKTI ke Repository Resmi
+ISI LOG PENGGUNAAN (QR Form / log cetak)
+Matikan Perangkat melalui menu Turn Off / Daya Mati pada menu di sistem
+Cabut/lepas kabel power dari sumber listrik
+Bukti pemanfaatan minimal = LOG + TAUTAN/FILE bukti
+E. JIKA ADA MASALAH
+✅ Kendala ringan: cek input/kabel, restart aplikasi✅ Kendala berat/kerusakan: hentikan penggunaan, amankan, lapor Operator/Tim TIK + Sarpras
+❌ Jangan factory reset / bongkar panel / matikan paksa dari listrik (kecuali darurat keselamatan)
+Kontak Operator/Tim TIK: ………………………Kontak Sarpras/Keamanan: ………………………Akses/Kunci Ruang: ………………………
+02. QUICK GUIDE IFP – POSTER MURID (SMP INDUK & SMP TERBUKA)
+SMP ……………………………………… (SMP Induk SMP Terbuka)TEMPel di Ruang IFP / Dekat IFP
+ATURAN SINGKAT (WAJIB DIPATUHI)
+IFP digunakan hanya saat didampingi guru/tutor.
+Sentuh layar hanya atas izin guru/tutor dan bergantian.
+Tangan harus bersih dan kering sebelum menyentuh layar.
+Gunakan stylus/alat yang disediakan (jangan pakai benda lain).
+❌ Dilarang menekan/memukul layar atau bercanda ber
+... [TRUNCATED]
+
+========================================
+FILE: SOP 1_ PENJADWALAN DAN PENGATURAN PENGGUNAAN IFP.docx
+========================================
+SOP 1: PENJADWALAN DAN PENGATURAN PENGGUNAAN IFP
+A. Identitas Dokumen
+Nama Dokumen : SOP Penjadwalan dan Pengaturan Penggunaan IFPNomor Dokumen : SOP-IFP-01Unit/Instansi : SMP ……………………………………… (SMP Induk SMP Terbuka)Tanggal Berlaku : ………………………………………Revisi/Versi : 1.0Disusun oleh : Tim Pengelola IFPDiperiksa oleh : Waka Kurikulum / Pengelola SMP TerbukaDisahkan oleh : Kepala Sekolah ……………………………
+B. Dasar/Referensi
+Dokumen Induk Tata Kelola IFP di SMP Induk untuk Mendukung Layanan SMP Terbuka.
+Kebijakan sekolah tentang pemanfaatan sarana prasarana pembelajaran.
+Ketentuan pengelolaan aset dan keamanan fasilitas sekolah.
+Tata tertib pemanfaatan perangkat digital sekolah (hak akses, batasan penggunaan, larangan instalasi ilegal, larangan konten terlarang, larangan perubahan pengaturan).
+SOP-IFP-03 Pendataan, Perawatan, Pemeliharaan, Penyimpanan dan Pengamanan (5P).
+C. Tujuan
+Menjamin penggunaan IFP terlaksana melalui jadwal tetap resmi yang ditetapkan kurikulum, sehingga akses adil dan tertib untuk SMP Induk dan layanan SMP Terbuka.
+Menetapkan ketentuan pemanfaatan slot jadwal (disiplin waktu mulai–selesai, kehadiran penanggung jawab).
+Menetapkan mekanisme perubahan jadwal insidental yang terkontrol melalui persetujuan pihak berwenang.
+Menjamin setiap sesi penggunaan terdokumentasi melalui log penggunaan dan bukti pemanfaatan untuk kebutuhan monitoring dan evaluasi.
+D. Ruang Lingkup
+SOP ini mengatur penjadwalan dan pengaturan akses penggunaan IFP pada ruang/unit yang ditetapkan untuk:
+pembelajaran reguler SMP Induk,
+tutorial/layanan SMP Terbuka,
+penguatan/remedial SMP Terbuka,
+asesmen, rapat/pelatihan internal, dan kegiatan lain yang disetujui sekolah.
+E. Definisi Istilah
+IFP: Interactive Flat Panel untuk pembelajaran interaktif.
+Jadwal Tetap Penggunaan: slot penggunaan IFP yang ditetapkan kurikulum (mingguan/bulanan/semester).
+Perubahan Jadwal Insidental: perubahan di luar jadwal tetap (tukar slot, pengalihan, penggantian penanggung jawab, tambahan sesi) melalui persetuju
+... [TRUNCATED]
+
+========================================
+FILE: SOP 2_ PENGATURAN PENGGUNAAN IFP UNTUK MURID SMP TERBUKA.docx
+========================================
+SOP 2: PENGATURAN PENGGUNAAN IFP UNTUK MURID SMP TERBUKA
+A. Identitas Dokumen
+Nama Dokumen : SOP Pengaturan Penggunaan IFP untuk Murid SMP TerbukaNomor Dokumen : SOP-IFP-02Unit/Instansi : SMP ……………………………………… (SMP Induk SMP Terbuka)Tanggal Berlaku : ………………………………………Revisi/Versi : 1.0Disusun oleh : Tim Pengelola IFP dan Pengelola SMP TerbukaDiperiksa oleh : Waka Kurikulum / Pengelola SMP TerbukaDisahkan oleh : Kepala Sekolah ……………………………
+B. Dasar/Referensi
+Dokumen Induk Tata Kelola IFP di SMP Induk untuk Mendukung Layanan SMP Terbuka.
+SOP-IFP-01 Penjadwalan dan Pengaturan Penggunaan IFP.
+SOP-IFP-03 Pendataan, Perawatan, Pemeliharaan, Penyimpanan dan Pengamanan (5P).
+Ketentuan internal sekolah tentang tata tertib peserta didik dan penggunaan sarana pembelajaran.
+Tata tertib pemanfaatan perangkat digital sekolah (hak akses, larangan instalasi ilegal, konten terlarang, dan perubahan pengaturan).
+C. Tujuan
+Menjamin murid SMP Terbuka memperoleh akses penggunaan IFP secara adil sesuai jadwal layanan yang ditetapkan.
+Mengatur tata tertib murid SMP Terbuka dalam menggunakan IFP agar aman, tertib, dan bertanggung jawab.
+Menetapkan mekanisme pendampingan oleh tutor/guru pendamping serta kewajiban dokumentasi sebagai bukti layanan pembelajaran.
+Mengurangi risiko kerusakan perangkat, penyalahgunaan akun, serta kehilangan data dan bukti layanan.
+D. Ruang Lingkup
+SOP ini berlaku untuk seluruh kegiatan murid SMP Terbuka yang memanfaatkan IFP di SMP Induk, meliputi tutorial terjadwal, penguatan materi, remedial, asesmen, dan kegiatan pembelajaran lain yang disetujui sekolah, baik di ruang IFP maupun ruang lain yang ditetapkan.
+E. Definisi Istilah
+Murid SMP Terbuka: peserta didik yang terdaftar pada layanan SMP Terbuka di bawah pembinaan SMP Induk.
+Tutor/Guru Pendamping: pendidik yang bertugas mendampingi murid SMP Terbuka selama tutorial/pembelajaran menggunakan IFP.
+Bukti layanan: dokumentasi minimal pelaksanaan layanan pembelajaran yang terdiri dari:
+Log penggunaan IFP,
+Ringkasan mat
+... [TRUNCATED]
+
+========================================
+FILE: SOP 3_ PENDATAAN, PERAWATAN, PEMELIHARAAN, PENYIMPANAN, DAN PENGAMANAN (5P).docx
+========================================
+SOP 3: PENDATAAN, PERAWATAN, PEMELIHARAAN, PENYIMPANAN, DAN PENGAMANAN (5P)
+A. Identitas Dokumen
+Nama Dokumen : SOP Pendataan, Perawatan, Pemeliharaan, Penyimpanan, dan Pengamanan IFP (5P)Nomor Dokumen : SOP-IFP-03Unit/Instansi : SMP ……………………………………… (SMP Induk SMP Terbuka)Tanggal Berlaku : ………………………………………Revisi/Versi : 1.0Disusun oleh : Tim Pengelola IFP (Operator/Tim TIK dan Sarpras)Diperiksa oleh : Waka Kurikulum / Pengelola SMP TerbukaDisahkan oleh : Kepala Sekolah ……………………………
+B. Dasar/Referensi
+Dokumen Induk Tata Kelola IFP di SMP Induk untuk Mendukung Layanan SMP Terbuka.
+Kebijakan sekolah tentang pengelolaan aset/sarana prasarana.
+SOP-IFP-01 Penjadwalan dan Pengaturan Penggunaan IFP.
+Ketentuan internal sekolah tentang keamanan ruang dan fasilitas.
+Tata tertib pemanfaatan perangkat digital sekolah (hak akses, larangan instalasi ilegal, konten terlarang, perubahan pengaturan, dan pengamanan data).
+C. Tujuan
+Menjamin IFP dan aksesori tercatat sebagai aset sekolah secara lengkap, akurat, dan mutakhir.
+Menetapkan standar perawatan dan pemeliharaan rutin agar perangkat berfungsi optimal dan berumur panjang.
+Menetapkan mekanisme penyimpanan yang aman bagi perangkat, aksesori, dokumen, dan data pendukung.
+Menetapkan prosedur pengamanan untuk mencegah kerusakan, kehilangan, dan penyalahgunaan perangkat.
+Menetapkan prosedur pelaporan, pencatatan problem, troubleshooting, dan tindak lanjut apabila terjadi gangguan/kerusakan.
+D. Ruang Lingkup
+Berlaku untuk pengelolaan IFP dan seluruh perlengkapan pendukungnya (termasuk laptop/perangkat pendukung bila ditetapkan sekolah) pada SMP Induk yang digunakan untuk pembelajaran reguler dan layanan SMP Terbuka, mencakup:
+Inventarisasi (pendataan–pencatatan, verifikasi–validasi, pelaporan)
+Perawatan dan pemeliharaan (harian–semesteran)
+Troubleshooting dan pencatatan problem
+Penyimpanan dan pengamanan (fisik, teknis, operasional)
+E. Definisi Istilah
+Pendataan/Inventarisasi (P1): pencatatan identitas aset IFP dan aksesori (nama barang,
+... [TRUNCATED]
+
+========================================
+FILE: SOP 4_ PENYEDIAAN MEDIA PEMBELAJARAN INTERAKTIF (IFP).docx
+========================================
+SOP 4: PENYEDIAAN MEDIA PEMBELAJARAN INTERAKTIF (IFP)
+A. Identitas Dokumen
+Nama Dokumen : SOP Penyediaan Media Pembelajaran Interaktif (IFP)Nomor Dokumen : SOP-IFP-04Unit/Instansi : SMP ……………………………………… (SMP Induk SMP Terbuka)Tanggal Berlaku : ………………………………………Revisi/Versi : 1.0Disusun oleh : Tim Pengelola IFP dan Operator/Tim TIKDiperiksa oleh : Waka Kurikulum / Pengelola SMP TerbukaDisahkan oleh : Kepala Sekolah ……………………………
+B. Dasar/Referensi
+Dokumen Induk Tata Kelola IFP di SMP Induk untuk Mendukung Layanan SMP Terbuka.
+SOP-IFP-01 Penjadwalan dan Pengaturan Penggunaan IFP.
+SOP-IFP-02 Pengaturan Penggunaan IFP untuk Murid SMP Terbuka.
+SOP-IFP-03 Pendataan, Perawatan, Pemeliharaan, Penyimpanan dan Pengamanan (5P).
+Kebijakan sekolah tentang penyimpanan bahan ajar (hardisk/drive daring/LMS), keamanan data, dan etika digital.
+C. Tujuan
+Menjamin ketersediaan media/bahan ajar digital yang valid, aman, terstruktur, dan mudah diakses untuk pembelajaran menggunakan IFP (SMP Induk dan layanan SMP Terbuka).
+Menetapkan alur pendataan mapel, pengumpulan media, verifikasi–validasi, penyimpanan terpusat, pengaturan akses berbasis peran, serta backup berkala.
+Memastikan media pembelajaran sesuai tata tertib sekolah (bebas konten terlarang, tidak instal ilegal, dan meminimalkan risiko malware).
+D. Ruang Lingkup
+SOP ini mengatur penyediaan dan pengelolaan media pembelajaran interaktif untuk digunakan pada IFP, mencakup:
+pendataan mata pelajaran dan struktur folder,
+pengumpulan/pembuatan bahan ajar,
+verifikasi–validasi (teknis dan substansi ringkas),
+penyimpanan terpusat (hardisk/drive daring/LMS),
+pengaturan hak akses,
+backup, pemulihan data, versioning, dan pengarsipan.
+E. Definisi Istilah
+Media pembelajaran interaktif: bahan ajar digital yang mendukung interaksi (PPT interaktif, LKPD digital, video, simulasi, kuis, hasil board/anotasi IFP, dll.).
+Repository Resmi Sekolah: media penyimpanan yang ditetapkan sekolah (hardisk terpusat + drive daring resmi dan/atau LMS).
+Akses berbasis p
+... [TRUNCATED]
+
+========================================
+FILE: SOP 5_ PELAKSANAAN PEMBELAJARAN MENGGUNAKAN IFP.docx
+========================================
+SOP 5: PELAKSANAAN PEMBELAJARAN MENGGUNAKAN IFP
+A. Identitas Dokumen
+Nama Dokumen : SOP Pelaksanaan Pembelajaran Menggunakan IFPNomor Dokumen : SOP-IFP-05Unit/Instansi : SMP ……………………………………… (SMP Induk SMP Terbuka)Tanggal Berlaku : ………………………………………Revisi/Versi : 1.0Disusun oleh : Tim Pengelola IFPDiperiksa oleh : Waka Kurikulum / Pengelola SMP TerbukaDisahkan oleh : Kepala Sekolah ……………………………
+B. Dasar/Referensi
+Dokumen Induk Tata Kelola IFP di SMP Induk untuk Mendukung Layanan SMP Terbuka.
+SOP-IFP-01 Penjadwalan dan Pengaturan Penggunaan IFP.
+SOP-IFP-02 Pengaturan Penggunaan IFP untuk Murid SMP Terbuka.
+SOP-IFP-03 Pendataan, Perawatan, Pemeliharaan, Penyimpanan dan Pengamanan (5P).
+SOP-IFP-04 Penyediaan Media Pembelajaran Interaktif.
+Tata tertib pemanfaatan perangkat digital sekolah (hak akses, larangan instalasi ilegal, konten terlarang, perubahan pengaturan, keamanan data).
+C. Tujuan
+Menjamin pelaksanaan pembelajaran/tutor menggunakan IFP berjalan efektif, aman, tertib, dan sesuai jadwal.
+Menetapkan prosedur standar pra–saat–pasca penggunaan IFP, termasuk aturan keterlibatan siswa, keamanan data, dan penanganan kendala.
+Menjamin tersedianya bukti pemanfaatan (log + tautan/file bukti) sebagai dasar monitoring dan evaluasi penggunaan IFP.
+D. Ruang Lingkup
+Berlaku untuk seluruh kegiatan pembelajaran menggunakan IFP pada SMP Induk dan layanan SMP Terbuka, meliputi:
+pembelajaran reguler,
+tutorial SMP Terbuka,
+penguatan/remedial,
+asesmen,
+microteaching/demonstrasi mengajar,
+kegiatan lain yang disetujui sekolah.
+E. Definisi Istilah
+Pra–Saat–Pasca: rangkaian prosedur sebelum, selama, dan setelah penggunaan IFP.
+Bukti Pemanfaatan: minimal (a) log penggunaan IFP dan (b) tautan/file bukti pembelajaran/layanan pada penyimpanan resmi sekolah (drive/hardisk/LMS).
+Media Pembelajaran: bahan ajar digital (PPT/PDF/video/LKPD/kuis) yang disimpan pada repository resmi sekolah.
+Kendala teknis: gangguan touch, audio, koneksi, input, aplikasi, atau perangkat pendukung.
+F. Peran dan Tanggu
+... [TRUNCATED]
+
+========================================
+FILE: SOP 6_ PELATIHAN PENINGKATAN KOMPETENSI DIGITAL GURU DAN TENAGA KEPENDIDIKAN (IFP & PEMBELAJARAN DIGITAL).docx
+========================================
+SOP 6: PELATIHAN PENINGKATAN KOMPETENSI DIGITAL GURU DAN TENAGA KEPENDIDIKAN (IFP & PEMBELAJARAN DIGITAL)
+A. Identitas Dokumen
+Nama Dokumen : SOP Pelatihan Peningkatan Kompetensi Digital Guru dan Tenaga Kependidikan (IFP & Pembelajaran Digital)Nomor Dokumen : SOP-IFP-06Unit/Instansi : SMP ……………………………………… (SMP Induk SMP Terbuka)Tanggal Berlaku : ………………………………………Revisi/Versi : 1.0Disusun oleh : Tim Pengelola IFP, Waka Kurikulum, Operator/Tim TIKDiperiksa oleh : Pengelola SMP Terbuka / Waka KurikulumDisahkan oleh : Kepala Sekolah ……………………………
+B. Dasar/Referensi
+Dokumen Induk Tata Kelola IFP di SMP Induk untuk Mendukung Layanan SMP Terbuka.
+SOP-IFP-01 Penjadwalan dan Pengaturan Penggunaan IFP.
+SOP-IFP-03 Pendataan, Perawatan, Pemeliharaan, Penyimpanan dan Pengamanan (5P).
+SOP-IFP-04 Penyediaan Media Pembelajaran Interaktif.
+SOP-IFP-05 Pelaksanaan Pembelajaran Menggunakan IFP.
+Tata tertib pemanfaatan perangkat digital sekolah (hak akses, larangan instalasi ilegal, konten terlarang, keamanan data).
+C. Tujuan
+Meningkatkan kompetensi teknis dan pedagogis guru serta tenaga kependidikan dalam pemanfaatan IFP dan perangkat digitalisasi pembelajaran.
+Menstandarkan pelatihan agar peserta mencapai kompetensi minimal: mampu mengoperasikan IFP, menggunakan media interaktif dari repository, menerapkan pembelajaran interaktif, serta menghasilkan bukti pemanfaatan (log + tautan/file).
+Menyiapkan mekanisme pengimbasan (diseminasi) praktik baik untuk mendukung layanan SMP Terbuka dan satuan pendidikan lain bila ditugaskan.
+D. Ruang Lingkup
+SOP ini berlaku untuk seluruh kegiatan peningkatan kapasitas terkait IFP dan pembelajaran digital, meliputi:
+Desiminasi
+IHT (In House Training)
+Workshop
+Pelatihan terstruktur
+Bimbingan Teknis (Bimtek)mencakup perencanaan, pelaksanaan, evaluasi, dokumentasi, tindak lanjut implementasi, dan pengimbasan.
+E. Definisi Istilah
+Desiminasi: penyebarluasan informasi/hasil pelatihan/praktik baik agar dapat diketahui dan diadopsi pihak lain.
+IHT: pelatihan interna
+... [TRUNCATED]
+
+========================================
+FILE: SOP 7_ MONITORING, EVALUASI, PELAPORAN, PENDAMPINGAN, DAN PEMANTAUAN PENGGUNAAN IFP.docx
+========================================
+SOP 7: MONITORING, EVALUASI, PELAPORAN, PENDAMPINGAN, DAN PEMANTAUAN PENGGUNAAN IFP
+A. Identitas Dokumen
+Nama Dokumen : SOP Monitoring, Evaluasi, Pelaporan, Pendampingan, dan Pemantauan Penggunaan IFPNomor Dokumen : SOP-IFP-07Unit/Instansi : SMP ……………………………………… (SMP Induk SMP Terbuka)Tanggal Berlaku : ………………………………………Revisi/Versi : 1.0Disusun oleh : Tim Pengelola IFP, Operator/Tim TIK, Waka Kurikulum/Pengelola SMP TerbukaDiperiksa oleh : Kepala Sekolah / Pengawas Pembina (opsional sesuai kebijakan)Disahkan oleh : Kepala Sekolah ……………………………
+B. Dasar/Referensi
+Dokumen Induk Tata Kelola IFP di SMP Induk untuk Mendukung Layanan SMP Terbuka.
+SOP-IFP-01 Penjadwalan dan Pengaturan Penggunaan IFP.
+SOP-IFP-02 Pengaturan Penggunaan IFP untuk Murid SMP Terbuka.
+SOP-IFP-03 Pendataan, Perawatan, Pemeliharaan, Penyimpanan dan Pengamanan (5P).
+SOP-IFP-04 Penyediaan Media Pembelajaran Interaktif.
+SOP-IFP-05 Pelaksanaan Pembelajaran Menggunakan IFP.
+SOP-IFP-06 Pelatihan Peningkatan Kompetensi Digital Guru & Tendik.
+Ketentuan internal sekolah mengenai evaluasi sarpras, tata tertib digital, dan pelaporan.
+C. Tujuan
+Memastikan pemanfaatan IFP berjalan efektif, aman, tertib, dan sesuai SOP.
+Memantau frekuensi dan kualitas penggunaan IFP untuk pembelajaran SMP Induk dan layanan SMP Terbuka.
+Menetapkan mekanisme evaluasi (kuesioner/survey/observasi), pelaporan berkala, tindak lanjut teknis, serta pendampingan/pengimbasan.
+Menjadi dasar pengambilan keputusan perbaikan kebijakan, penjadwalan, pelatihan, dan dukungan teknis.
+D. Ruang Lingkup
+Meliputi kegiatan:
+Monitoring rutin: jadwal, log penggunaan, bukti pemanfaatan, checklist kondisi perangkat.
+Evaluasi berkala: kuesioner kepala sekolah/pengawas, survey pengguna (guru/siswa), observasi sampling.
+Pelaporan: rekap bulanan/semester (internal) dan pelaporan kepada pihak terkait bila diminta.
+Pendampingan: sosialisasi/pelatihan, konsultasi teknis, fasilitasi penggunaan, pengimbasan.
+Pemantauan: pemantauan berbasis data (dashboard/survey/log) t
+... [TRUNCATED]
+

@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
+  
+  /* Premium Dark Theme Colors */
+  --color-background: #09090b; /* Zinc 950 */
+  --color-foreground: #fafafa; /* Zinc 50 */
+  
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1; /* Indigo 500 */
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+
+  --color-accent-500: #a855f7; /* Purple 500 */
+  
+  --color-surface: #18181b; /* Zinc 900 */
+  --color-surface-hover: #27272a; /* Zinc 800 */
+  --color-border: #27272a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Prevent text selection on tap for UI elements */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Fix 300ms tap delay & improve touch targets on mobile */
+  a, button, [role="button"], [onClick], input, select, textarea, label {
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+
+  /* Ensure interactive elements are properly clickable over decorative layers */
+  button, a {
+    position: relative;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-surface/80 backdrop-blur-lg border border-border shadow-xl rounded-2xl;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-accent-500;
+  }
 }

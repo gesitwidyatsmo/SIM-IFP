@@ -3,14 +3,14 @@
 
 ## 1. Pendahuluan
 **1.1 Latar Belakang**
-Interactive Flat Panel (IFP) merupakan sarana digitalisasi pembelajaran interaktif. Dalam lingkup SMP Induk penyelenggara SMP Terbuka, pemanfaatan IFP perlu diatur secara adil, aman, dan akuntabel guna mendukung pembelajaran reguler maupun layanan tutorial/remedial bagi siswa SMP Terbuka.
+Interactive Flat Panel (IFP) merupakan sarana digitalisasi pembelajaran interaktif. Dalam lingkup sekolah reguler maupun penyelenggara kelas terbuka, pemanfaatan IFP perlu diatur secara adil, aman, dan akuntabel guna mendukung pembelajaran reguler maupun layanan tutorial/remedial bagi siswa kelas terbuka.
 
 **1.2 Tujuan Produk (Product Objective)**
 Membangun sebuah sistem informasi berbasis web yang memusatkan seluruh kegiatan terkait IFP: mulai dari pengaturan jadwal, log pemanfaatan, pelaporan kendala (troubleshooting), hingga penyimpanan media pembelajaran agar selaras dengan Standar Operasional Prosedur (SOP) sekolah.
 
 **1.3 Metrik Kesuksesan**
 - 100% penggunaan IFP tercatat melalui log digital sistem.
-- Tidak ada jadwal penggunaan (SMP Induk & SMP Terbuka) yang bentrok (conflict-free scheduling).
+- Tidak ada jadwal penggunaan (Kelas Reguler & Kelas Terbuka) yang bentrok (conflict-free scheduling).
 - Media pembelajaran yang digunakan terpusat dan tervalidasi minimal 80% per semester.
 - Laporan Monev dapat diekspor secara instan oleh pihak manajemen sekolah (Kepala Sekolah/Waka).
 
@@ -20,7 +20,7 @@ Membangun sebuah sistem informasi berbasis web yang memusatkan seluruh kegiatan 
 Sistem ini akan diakses oleh beberapa tingkatan pengguna (Roles):
 1. **Admin / Tim TIK**: Memiliki akses penuh untuk mengelola pengguna, memvalidasi materi/media, menyetujui jadwal insidental, dan mengelola data aset (inventaris & perbaikan).
 2. **Waka Kurikulum / Kepala Sekolah**: Memiliki akses ke *Dashboard Monev* untuk memantau grafik penggunaan, melihat log bukti, dan mengunduh laporan.
-3. **Guru (SMP Induk) / Tutor (SMP Terbuka)**: Pengguna utama yang akan membooking jadwal, mengisi log pemanfaatan, mengunggah bukti/evidence mengajar, serta mengunggah atau mengunduh media pembelajaran dari repositori.
+3. **Guru (Kelas Reguler) / Tutor (Kelas Terbuka)**: Pengguna utama yang akan membooking jadwal, mengisi log pemanfaatan, mengunggah bukti/evidence mengajar, serta mengunggah atau mengunduh media pembelajaran dari repositori.
 4. **Siswa (Opsional)**: Akses terbatas (mungkin hanya *Read-Only* atau mengakses materi dari repositori yang telah dibagikan).
 
 ---
@@ -30,7 +30,7 @@ Sistem ini akan diakses oleh beberapa tingkatan pengguna (Roles):
 Berdasarkan analisis SOP (SOP 1 - SOP 7), berikut adalah penjabaran modul fungsional:
 
 ### 3.1 Modul Penjadwalan & Booking
-- **FR 1.1**: Sistem harus menampilkan kalender interaktif yang membedakan jadwal SMP Induk (Reguler) dan SMP Terbuka.
+- **FR 1.1**: Sistem harus menampilkan kalender interaktif yang membedakan jadwal Kelas Reguler dan Kelas Terbuka.
 - **FR 1.2**: Guru/Tutor dapat mengajukan *booking* jadwal insidental melalui formulir pengajuan.
 - **FR 1.3**: Admin/Kurikulum dapat menyetujui (Approve) atau menolak (Reject) permintaan jadwal insidental.
 - **FR 1.4**: Sistem harus memberikan peringatan (conflict prevention) apabila jadwal yang diajukan bertabrakan dengan jadwal yang sudah ada.

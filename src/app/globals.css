@@ -1,35 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", "Plus Jakarta Sans", system-ui, sans-serif;
-  
-  /* Premium Dark Theme Colors */
-  --color-background: #09090b; /* Zinc 950 */
-  --color-foreground: #fafafa; /* Zinc 50 */
-  
-  --color-primary-50: #eef2ff;
-  --color-primary-100: #e0e7ff;
-  --color-primary-200: #c7d2fe;
-  --color-primary-300: #a5b4fc;
-  --color-primary-400: #818cf8;
-  --color-primary-500: #6366f1; /* Indigo 500 */
-  --color-primary-600: #4f46e5;
-  --color-primary-700: #4338ca;
-  --color-primary-800: #3730a3;
-  --color-primary-900: #312e81;
-  --color-primary-950: #1e1b4b;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Space Mono", monospace;
 
-  --color-accent-500: #a855f7; /* Purple 500 */
-  
-  --color-surface: #18181b; /* Zinc 900 */
-  --color-surface-hover: #27272a; /* Zinc 800 */
-  --color-border: #27272a;
+  /* Academic Neobrutalism Palette */
+  --color-canvas: #FFFDF5;
+  --color-paper-alt: #F4EFE6;
+  --color-ink: #121212;
+
+  --color-highlighter: #FFE600;
+  --color-academic-blue: #3B82F6;
+  --color-tutorial-green: #10B981;
+  --color-stamp-red: #EF4444;
+  --color-folder-orange: #FB923C;
+  --color-review-amber: #F59E0B;
 }
 
 @layer base {
   :root {
-    --background: var(--color-background);
-    --foreground: var(--color-foreground);
+    --background: #FFFDF5;
+    --foreground: #121212;
   }
 
   body {
@@ -38,32 +29,229 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Prevent text selection on tap for UI elements */
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Fix 300ms tap delay & improve touch targets on mobile */
+  /* Accessible touch targets & standard pointer interaction */
   a, button, [role="button"], [onClick], input, select, textarea, label {
     touch-action: manipulation;
-    cursor: pointer;
-  }
-
-  /* Ensure interactive elements are properly clickable over decorative layers */
-  button, a {
-    position: relative;
   }
 }
 
-@layer utilities {
-  .glass {
-    @apply bg-white/5 backdrop-blur-md border border-white/10;
+/* ==========================================================
+   ACADEMIC NEOBRUTALISM UTILITY CLASSES & RECIPES
+   ========================================================== */
+
+/* 1. Kartu Neobrutalism */
+.neo-card {
+  background-color: #FFFFFF;
+  border: 2.5px solid #121212;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 0px 0px #121212;
+}
+
+.neo-card-interactive {
+  background-color: #FFFFFF;
+  border: 2.5px solid #121212;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 0px 0px #121212;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+}
+
+.neo-card-interactive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #121212;
+}
+
+.neo-card-interactive:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px #121212;
+}
+
+/* 2. Tombol Neobrutalism */
+.neo-btn-primary {
+  background-color: #FFE600;
+  color: #121212;
+  font-weight: 800;
+  border: 2.5px solid #121212;
+  border-radius: 0.75rem;
+  box-shadow: 3px 3px 0px 0px #121212;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.neo-btn-primary:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px 0px #121212;
+  background-color: #FFF04D;
+}
+
+.neo-btn-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px 0px #121212;
+}
+
+.neo-btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 2px 2px 0px 0px #121212;
+}
+
+.neo-btn-secondary {
+  background-color: #FFFFFF;
+  color: #121212;
+  font-weight: 700;
+  border: 2.5px solid #121212;
+  border-radius: 0.75rem;
+  box-shadow: 3px 3px 0px 0px #121212;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.neo-btn-secondary:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px 0px #121212;
+  background-color: #F4EFE6;
+}
+
+.neo-btn-secondary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px 0px #121212;
+}
+
+.neo-btn-danger {
+  background-color: #EF4444;
+  color: #FFFFFF;
+  font-weight: 800;
+  border: 2.5px solid #121212;
+  border-radius: 0.75rem;
+  box-shadow: 3px 3px 0px 0px #121212;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.neo-btn-danger:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px 0px #121212;
+  background-color: #DC2626;
+}
+
+.neo-btn-danger:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px 0px #121212;
+}
+
+.neo-btn-success {
+  background-color: #10B981;
+  color: #FFFFFF;
+  font-weight: 800;
+  border: 2.5px solid #121212;
+  border-radius: 0.75rem;
+  box-shadow: 3px 3px 0px 0px #121212;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.neo-btn-success:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px 0px #121212;
+  background-color: #059669;
+}
+
+.neo-btn-success:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px 0px #121212;
+}
+
+/* 3. Input & Form Controls */
+.neo-input {
+  background-color: #FFFFFF;
+  color: #121212;
+  font-weight: 600;
+  border: 2px solid #121212;
+  border-radius: 0.75rem;
+  padding: 0.625rem 1rem;
+  box-shadow: 2px 2px 0px 0px #121212;
+  transition: box-shadow 0.1s ease, border-color 0.1s ease;
+}
+
+.neo-input:focus {
+  outline: none;
+  box-shadow: 4px 4px 0px 0px #FFE600;
+  border-color: #121212;
+}
+
+/* 4. Stempel & Badges */
+.neo-stamp {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #121212;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.6875rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 2px 2px 0px 0px #121212;
+}
+
+.neo-stamp-approved {
+  background-color: #D1FAE5;
+  color: #065F46;
+  transform: rotate(-1deg);
+}
+
+.neo-stamp-pending {
+  background-color: #FEF08A;
+  color: #854D0E;
+  transform: rotate(1deg);
+}
+
+.neo-stamp-danger {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.neo-stamp-blue {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+}
+
+/* 5. Striped Holiday Pattern for Fridays */
+.bg-holiday-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    #FEE2E2,
+    #FEE2E2 10px,
+    #FECACA 10px,
+    #FECACA 20px
+  );
+}
+
+/* 6. Print Optimization */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
   }
-  
-  .glass-card {
-    @apply bg-surface/80 backdrop-blur-lg border border-border shadow-xl rounded-2xl;
+  aside, header, button, .no-print, canvas {
+    display: none !important;
   }
-  
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-accent-500;
+  .neo-card {
+    box-shadow: none !important;
+    border: 1px solid #121212 !important;
   }
 }

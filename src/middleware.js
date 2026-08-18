@@ -31,22 +31,14 @@ export async function middleware(request) {
     data: { user },
   } = await supabase.auth.getUser()
 
-  const isDashboardRoute = request.nextUrl.pathname.startsWith('/dashboard')
-  
-  if (!user && isDashboardRoute) {
-    // Redirect to login if unauthenticated user tries to access /dashboard
-    const url = request.nextUrl.clone()
-    url.pathname = '/login'
-    return NextResponse.redirect(url)
-  }
-
+  // Redirect to dashboard if authenticated user tries to access /login
   if (user && request.nextUrl.pathname === '/login') {
-    // Redirect to dashboard if authenticated user tries to access /login
     const url = request.nextUrl.clone()
     url.pathname = '/dashboard'
     return NextResponse.redirect(url)
   }
 
+  // Dashboard dan seluruh menu bersifat terbuka untuk umum (tidak ada redirect paksa ke /login)
   return supabaseResponse
 }
 
@@ -57,7 +49,6 @@ export const config = {
      * - _next/static (static files)
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
-     * Feel free to modify this pattern to include more paths.
      */
     '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
   ],

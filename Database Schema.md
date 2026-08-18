@@ -1,19 +1,21 @@
 # Database Schema (Skema Database)
 **Sistem Informasi Manajemen Terpadu Lab IFP (SIM-IFP)**
 
-Berikut adalah rancangan struktur tabel *database* relasional (PostgreSQL) yang akan digunakan di **Supabase**.
+Berikut adalah rancangan struktur tabel *database* relasional (PostgreSQL) yang digunakan di **Supabase**.
 
 ---
 
-## 1. Tabel `profiles` (Data Pengguna)
-Supabase memiliki tabel bawaan `auth.users` untuk menyimpan email & password. Tabel `profiles` ini akan terhubung langsung dengan `auth.users` untuk menyimpan data profil tambahan.
+## 1. Tabel `profiles` (Data Administrator / Pengguna)
+Terhubung langsung dengan `auth.users` melalui trigger `on_auth_user_created` untuk menyimpan identitas profil.
 
 | Kolom | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `id` | `UUID` | *Primary Key*, relasi ke `auth.users.id`. |
-| `full_name` | `VARCHAR` | Nama lengkap guru/admin. |
-| `role` | `ENUM` | Peran pengguna: `'ADMIN'`, `'GURU'`, `'TUTOR'`, `'KEPALA_SEKOLAH'`. |
-| `created_at` | `TIMESTAMP` | Waktu akun dibuat. |
+| `full_name` | `VARCHAR(255)` | Nama lengkap admin/pengguna. |
+| `email` | `VARCHAR(255)` | Alamat email. |
+| `role` | `ENUM` | Peran: `'ADMIN'`, `'GURU'`, `'TUTOR'`, `'KEPALA_SEKOLAH'`. |
+| `created_at` | `TIMESTAMP WITH TIME ZONE` | Waktu akun dibuat. |
+| `updated_at` | `TIMESTAMP WITH TIME ZONE` | Waktu update profil. |
 
 ---
 
@@ -23,91 +25,84 @@ Menyimpan daftar inventaris *Interactive Flat Panel*.
 | Kolom | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `id` | `UUID` | *Primary Key*. |
-| `asset_code` | `VARCHAR` | Kode unik inventaris (misal: IFP-001). |
-| `room_location` | `VARCHAR` | Lokasi penempatan (misal: Ruang Kelas 7A, Ruang IFP). |
+| `asset_code` | `VARCHAR(100)` | Kode unik inventaris (misal: IFP-LAB-PUTRA, IFP-01). |
+| `room_location` | `VARCHAR(255)` | Lokasi penempatan (misal: Lab IFP Putra, Ruang Kelas 7A). |
 | `status` | `ENUM` | Kondisi alat: `'BAGUS'`, `'PERBAIKAN'`, `'RUSAK'`. |
-| `created_at` | `TIMESTAMP` | - |
-| `updated_at` | `TIMESTAMP` | - |
+| `created_at` | `TIMESTAMP WITH TIME ZONE` | Waktu registrasi aset. |
+| `updated_at` | `TIMESTAMP WITH TIME ZONE` | Waktu update status aset. |
 
 ---
 
-## 3. Tabel `schedules` (Penjadwalan / Booking)
-Menyimpan riwayat dan rencana peminjaman/penggunaan IFP.
+## 3. Tabel `schedules` (Jadwal Penggunaan IFP)
+Menyimpan jadwal penggunaan IFP reguler maupun insidental yang diatur oleh Admin.
 
 | Kolom | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `id` | `UUID` | *Primary Key*. |
 | `ifp_asset_id` | `UUID` | *Foreign Key*, mengacu ke `ifp_assets.id`. |
-| `user_id` | `UUID` | *Foreign Key*, mengacu ke `profiles.id` (peminjam). |
-| `title` | `VARCHAR` | Judul kegiatan (misal: "IPA Kelas 8"). |
-| `start_time` | `TIMESTAMP` | Waktu mulai. |
-| `end_time` | `TIMESTAMP` | Waktu selesai. |
+| `user_id` | `UUID` | *Foreign Key*, mengacu ke `profiles.id` (opsional). |
+| `title` | `VARCHAR(255)` | Topik / Judul kegiatan (misal: "Praktikum Fisika Optik"). |
+| `date` | `DATE` | Tanggal kegiatan (Format: YYYY-MM-DD). |
+| `start_time` | `VARCHAR(10)` | Waktu mulai (Format: "07:15"). |
+| `end_time` | `VARCHAR(10)` | Waktu selesai (Format: "08:35"). |
+| `category` | `VARCHAR(100)` | Kategori: `'Pembelajaran'`, `'Ekstrakurikuler'`, `'Rapat Guru'`, `'Lainnya'`. |
+| `subject` | `VARCHAR(255)` | Mata Pelajaran (misal: "IPA", "Matematika"). |
+| `class_name` | `VARCHAR(100)` | Rombel / Kelas (misal: "9A", "7B"). |
 | `type` | `ENUM` | Jenis: `'REGULER_INDUK'`, `'TUTORIAL_TERBUKA'`, `'INSIDENTAL'`. |
-| `status` | `ENUM` | Status persetujuan (khusus Insidental): `'PENDING'`, `'APPROVED'`, `'REJECTED'`. |
-| `notes` | `TEXT` | Catatan tambahan (opsional). |
+| `status` | `ENUM` | Status: `'APPROVED'`, `'PENDING'`, `'REJECTED'`. |
+| `notes` | `TEXT` | Catatan tambahan. |
+| `created_at` | `TIMESTAMP WITH TIME ZONE` | Waktu jadwal dibuat. |
 
 ---
 
-## 4. Tabel `usage_logs` (Buku Tamu / Log Penggunaan)
-Form yang diisi guru setelah selesai menggunakan IFP (wajib unggah bukti).
+## 4. Tabel `usage_logs` (Buku Tamu / Log Penggunaan Digital)
+Form yang diisi guru setelah selesai menggunakan IFP (disertai unggah bukti foto).
 
 | Kolom | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `id` | `UUID` | *Primary Key*. |
-| `schedule_id` | `UUID` | *Foreign Key*, relasi ke `schedules.id` (bisa *null* jika penggunaan mendadak). |
+| `schedule_id` | `UUID` | *Foreign Key*, relasi ke `schedules.id` (opsional). |
 | `ifp_asset_id` | `UUID` | *Foreign Key*, mengacu ke `ifp_assets.id`. |
-| `user_id` | `UUID` | *Foreign Key*, mengacu ke `profiles.id` (pengguna). |
-| `subject` | `VARCHAR` | Mata Pelajaran. |
-| `topic` | `VARCHAR` | Topik/Materi yang diajarkan. |
-| `evidence_url` | `VARCHAR` | Tautan/Path file foto kegiatan yang diunggah ke *Supabase Storage*. |
-| `created_at` | `TIMESTAMP` | Waktu log dibuat. |
+| `user_id` | `UUID` | *Foreign Key*, mengacu ke `profiles.id` (opsional). |
+| `teacher_name` | `VARCHAR(255)` | Nama guru pengajar. |
+| `subject` | `VARCHAR(255)` | Mata Pelajaran. |
+| `topic` | `VARCHAR(255)` | Topik/Materi yang diajarkan. |
+| `start_time` | `VARCHAR(10)` | Waktu mulai realisasi. |
+| `end_time` | `VARCHAR(10)` | Waktu selesai realisasi. |
+| `evidence_url` | `VARCHAR(1024)` | Tautan file bukti di Supabase Storage bucket `evidence`. |
+| `created_at` | `TIMESTAMP WITH TIME ZONE` | Waktu log dibuat. |
 
 ---
 
-## 5. Tabel `tickets` (Pelaporan Kendala / Troubleshooting)
-Modul pelaporan jika IFP mengalami masalah teknis (ticketing 5P).
+## 5. Tabel `tickets` (Pelaporan Kendala / Troubleshooting 5P)
+Modul pelaporan kerusakan IFP oleh guru/murid.
 
 | Kolom | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `id` | `UUID` | *Primary Key*. |
-| `ifp_asset_id` | `UUID` | *Foreign Key*, mengacu ke `ifp_assets.id` yang rusak. |
-| `reported_by` | `UUID` | *Foreign Key*, mengacu ke `profiles.id` (pelapor). |
-| `issue_desc` | `TEXT` | Deskripsi kerusakan. |
+| `ticket_code` | `VARCHAR(50)` | Kode tiket unik (misal: "TKT-202608-001"). |
+| `ifp_asset_id` | `UUID` | *Foreign Key*, mengacu ke `ifp_assets.id`. |
+| `reported_by` | `UUID` | *Foreign Key*, mengacu ke `profiles.id` (opsional). |
+| `reporter_name`| `VARCHAR(255)` | Nama pelapor / guru / murid. |
+| `issue_desc` | `TEXT` | Deskripsi detail kerusakan/kendala. |
+| `severity` | `ENUM` | Tingkat keparahan: `'LOW'`, `'MEDIUM'`, `'HIGH'`. |
 | `status` | `ENUM` | Status penanganan: `'OPEN'`, `'IN_PROGRESS'`, `'CLOSED'`. |
-| `created_at` | `TIMESTAMP` | Waktu laporan dibuat. |
-| `resolved_at` | `TIMESTAMP` | Waktu masalah selesai ditangani (bisa *null*). |
+| `created_at` | `TIMESTAMP WITH TIME ZONE` | Waktu laporan dibuat. |
+| `resolved_at` | `TIMESTAMP WITH TIME ZONE` | Waktu selesai ditangani. |
 
 ---
 
-## 6. Tabel `media_repository` (Pusat Bahan Ajar)
-Menyimpan metadata dan *link* dari materi interaktif yang diunggah.
+## 6. Tabel `media_repository` (Pusat Bahan Ajar Interaktif)
+Menyimpan berkas dan materi pembelajaran interaktif.
 
 | Kolom | Tipe Data | Keterangan |
 | :--- | :--- | :--- |
 | `id` | `UUID` | *Primary Key*. |
-| `uploader_id` | `UUID` | *Foreign Key*, mengacu ke `profiles.id`. |
-| `title` | `VARCHAR` | Nama materi (misal: "Materi Tata Surya Interaktif"). |
-| `subject` | `VARCHAR` | Mata pelajaran. |
-| `grade_level` | `VARCHAR` | Kelas (misal: "Kelas 7"). |
-| `file_url` | `VARCHAR` | Tautan/Path dokumen di *Supabase Storage*. |
-| `status` | `ENUM` | Status validasi materi: `'PENDING_VALIDATION'`, `'APPROVED'`, `'REJECTED'`. |
-| `created_at` | `TIMESTAMP` | - |
-
----
-
-## 7. Tabel `training_records` (Catatan Pelatihan)
-Untuk memantau kompetensi guru (SOP 6).
-
-| Kolom | Tipe Data | Keterangan |
-| :--- | :--- | :--- |
-| `id` | `UUID` | *Primary Key*. |
-| `user_id` | `UUID` | *Foreign Key*, mengacu ke `profiles.id` (peserta). |
-| `training_name` | `VARCHAR` | Nama pelatihan (misal: "IHT IFP Dasar"). |
-| `completed_date` | `DATE` | Tanggal selesai pelatihan. |
-| `certificate_url`| `VARCHAR` | Tautan bukti/sertifikat (jika ada, opsional). |
-
----
-
-### ERD (Entity Relationship Diagram) Gambaran Kasar
-Setiap **Pengguna (Profiles)** dapat memilik banyak **Jadwal (Schedules)**, membuat banyak **Log (Usage Logs)**, mengunggah banyak **Materi (Media)**, dan membuat **Tiket (Tickets)**.
-Setiap **IFP Asset** memiliki banyak riwayat Jadwal, Log Penggunaan, dan Tiket kendala yang melekat pada alat tersebut.
+| `uploader_id` | `UUID` | *Foreign Key*, mengacu ke `profiles.id` (opsional). |
+| `title` | `VARCHAR(255)` | Nama materi. |
+| `subject` | `VARCHAR(255)` | Mata pelajaran. |
+| `grade_level` | `VARCHAR(50)` | Tingkat kelas (misal: "Kelas 7", "Kelas 8", "Kelas 9", "Umum"). |
+| `file_url` | `VARCHAR(1024)` | URL berkas pada bucket `media`. |
+| `file_type` | `VARCHAR(20)` | Tipe berkas: `'pdf'`, `'video'`, `'ppt'`. |
+| `status` | `ENUM` | Status validasi: `'PENDING_VALIDATION'`, `'APPROVED'`, `'REJECTED'`. |
+| `created_at` | `TIMESTAMP WITH TIME ZONE` | Waktu unggah. |
